@@ -25,7 +25,7 @@ class PlaceDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final id = ModalRoute.of(context).settings.arguments;
     final selectedPlace =
-        Provider.of<GreatPlaces>(context, listen: false).findById(id);
+        Provider.of<GreatPlaces>(context,).findById(id);
      
 
     

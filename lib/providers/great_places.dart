@@ -19,7 +19,7 @@ class GreatPlaces with ChangeNotifier {
   }
 
   Place findById(String id) {
-    return _items.firstWhere((place) => place.id == id);
+    return _items.firstWhere((place) => place.id == id,orElse: ()=>null);
   }
 
   Future<void> updateplace(String id,String description,File image,String title) async{

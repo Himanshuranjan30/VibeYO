@@ -85,8 +85,8 @@ class _PlacesListScreenState extends State<PlacesListScreen> {
                                 return 
                                                                    Container(
                                         child: PlaceItem(
-                                      Provider.of<GreatPlaces>(context).items[i].id,
-                                      Provider.of<GreatPlaces>(context)
+                                      Provider.of<GreatPlaces>(context,listen: false).items[i].id,
+                                      Provider.of<GreatPlaces>(context,listen: false)
                                           .items[i]
                                           .image,
                                     ),
